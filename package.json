@@ -1,22 +1,34 @@
 {
   "name": "pi-working-vibe",
   "version": "0.1.0",
-  "description": "Custom Working… message + spinner for pi. Drop-in vibes from ~/.pi/agent/vibes/*.txt and configurable indicator presets.",
+  "description": "Custom Working… message + tool-aware spinner for pi. Vibe files with [default] and [tool:<name>] sections; ships with mafia, hacker, pirate, zen.",
   "type": "module",
-  "private": true,
   "license": "MIT",
   "author": "davecodes",
+  "homepage": "https://github.com/Davidcreador/pi-working-vibe#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Davidcreador/pi-working-vibe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Davidcreador/pi-working-vibe/issues"
+  },
   "files": [
     "index.ts",
     "lib/**/*.ts",
-    "README.md"
+    "vibes/**/*.txt",
+    "README.md",
+    "LICENSE"
   ],
   "keywords": [
     "pi-package",
+    "pi",
     "pi-extension",
+    "coding-agent",
     "working-message",
     "spinner",
-    "vibe"
+    "vibe",
+    "tui"
   ],
   "pi": {
     "extensions": [

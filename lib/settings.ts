@@ -70,7 +70,10 @@ export const MIN_INDICATOR_INTERVAL_MS = 40;
 
 const HOME = homedir();
 const GLOBAL_SETTINGS = join(HOME, '.pi', 'agent', 'settings.json');
-export const VIBES_DIR = join(HOME, '.pi', 'agent', 'vibes');
+/** User-owned vibe directory. Takes precedence over bundled defaults. */
+export const USER_VIBES_DIR = join(HOME, '.pi', 'agent', 'vibes');
+/** Back-compat alias (older code paths reference VIBES_DIR). */
+export const VIBES_DIR = USER_VIBES_DIR;
 
 function readJsonSafe(path: string): Record<string, unknown> {
   if (!existsSync(path)) return {};
