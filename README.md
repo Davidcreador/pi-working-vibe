@@ -19,17 +19,22 @@ tool. Ships with four ready-to-use vibes: **mafia**, **hacker**, **pirate**,
 ## Install
 
 ```bash
-# From GitHub
+# From npm (recommended)
+pi install npm:pi-working-vibe
+
+# From GitHub (always latest main)
 pi install git:github.com/Davidcreador/pi-working-vibe
 
-# Project-local (writes to .pi/settings.json)
-pi install -l git:github.com/Davidcreador/pi-working-vibe
+# Project-local (writes to .pi/settings.json instead of global)
+pi install -l npm:pi-working-vibe
 
-# Try without installing
-pi -e git:github.com/Davidcreador/pi-working-vibe
+# Try without installing (single-run, ephemeral)
+pi -e npm:pi-working-vibe
 ```
 
 That's it. Default vibe (`mafia`) activates immediately on the next session.
+
+Update later with `pi update npm:pi-working-vibe`. Remove with `pi remove npm:pi-working-vibe`.
 
 ## What it does
 
