@@ -1,0 +1,30 @@
+{
+  "name": "pi-working-vibe",
+  "version": "0.1.0",
+  "description": "Custom Working… message + spinner for pi. Drop-in vibes from ~/.pi/agent/vibes/*.txt and configurable indicator presets.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "author": "davecodes",
+  "files": [
+    "index.ts",
+    "lib/**/*.ts",
+    "README.md"
+  ],
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "working-message",
+    "spinner",
+    "vibe"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  }
+}
