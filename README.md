@@ -1,6 +1,8 @@
 # pi-working-vibe
 
-> Custom **Working…** message and tool-aware spinner for [pi](https://github.com/badlogic/pi-mono).
+> Custom **Working…** message and tool-aware spinner for [pi](https://pi.dev).
+
+![pi-working-vibe demo](./assets/demo.png)
 
 Replace pi's default `⠋ Working…` with themed flavor text that rotates while
 the agent is thinking, and automatically switches when the model calls a

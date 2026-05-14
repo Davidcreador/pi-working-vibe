@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace">
+  <!-- background -->
+  <rect width="1200" height="630" fill="#0e0f13"/>
+
+  <!-- terminal window -->
+  <rect x="60" y="60" width="1080" height="510" rx="14" fill="#13151a" stroke="#262a33" stroke-width="1"/>
+  <!-- titlebar -->
+  <rect x="60" y="60" width="1080" height="38" rx="14" fill="#1a1d24"/>
+  <rect x="60" y="84" width="1080" height="14" fill="#1a1d24"/>
+  <circle cx="86" cy="79" r="6" fill="#ff5f56"/>
+  <circle cx="108" cy="79" r="6" fill="#ffbd2e"/>
+  <circle cx="130" cy="79" r="6" fill="#27c93f"/>
+  <text x="600" y="84" fill="#6b7280" font-size="14" text-anchor="middle">pi — ~/work/ai-tutor-core</text>
+
+  <!-- terminal body -->
+  <g font-size="20" fill="#c8cbd4">
+    <!-- user prompt -->
+    <text x="98" y="148"><tspan fill="#7aa2f7">›</tspan> <tspan fill="#c8cbd4">read the database schema and explain it to me</tspan></text>
+
+    <!-- spinner + working line — three frames stacked to show rotation -->
+    <text x="98" y="206"><tspan fill="#bb9af7">⠙</tspan> <tspan fill="#6b7280">The consiglieri is thinking...</tspan></text>
+
+    <!-- tool call indicator -->
+    <text x="98" y="252" fill="#6b7280">┌─ read ────────────────────────────────────────────────────────────</text>
+    <text x="98" y="278" fill="#c8cbd4">│ packages/db/src/schema.ts</text>
+    <text x="98" y="304" fill="#6b7280">└────────────────────────────────────────────────────────────────────</text>
+
+    <!-- working line while tool is running -->
+    <text x="98" y="354"><tspan fill="#7aa2f7">⠹</tspan> <tspan fill="#9ece6a">The ledger is being scanned...</tspan></text>
+
+    <!-- second tool call -->
+    <text x="98" y="400" fill="#6b7280">┌─ grep ────────────────────────────────────────────────────────────</text>
+    <text x="98" y="426" fill="#c8cbd4">│ "pgTable" packages/db/src/</text>
+    <text x="98" y="452" fill="#6b7280">└────────────────────────────────────────────────────────────────────</text>
+
+    <!-- back to default flavor as model resumes -->
+    <text x="98" y="502"><tspan fill="#f7768e">⠸</tspan> <tspan fill="#6b7280">The wire taps are listening...</tspan></text>
+  </g>
+
+  <!-- footer label -->
+  <g font-size="16">
+    <text x="60" y="608" fill="#6b7280">pi-working-vibe</text>
+    <text x="1140" y="608" fill="#6b7280" text-anchor="end">tool-aware Working… for pi</text>
+  </g>
+</svg>

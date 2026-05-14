@@ -1,6 +1,6 @@
 {
   "name": "pi-working-vibe",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Custom Working… message + tool-aware spinner for pi. Vibe files with [default] and [tool:<name>] sections; ships with mafia, hacker, pirate, zen.",
   "type": "module",
   "license": "MIT",
@@ -17,6 +17,7 @@
     "index.ts",
     "lib/**/*.ts",
     "vibes/**/*.txt",
+    "assets/demo.png",
     "README.md",
     "LICENSE"
   ],
@@ -33,7 +34,8 @@
   "pi": {
     "extensions": [
       "./index.ts"
-    ]
+    ],
+    "image": "https://raw.githubusercontent.com/Davidcreador/pi-working-vibe/main/assets/demo.png"
   },
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "*",
